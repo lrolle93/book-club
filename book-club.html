@@ -19,7 +19,7 @@
 	<h3> See the latest books that I've read  <br>
 	and find one that suits you. </h3>
 
-	<button class="cta alt">More Info</button>
+	<a href="#more-info">Read More</a>
 
 	<div class="char1">
 		
@@ -39,14 +39,14 @@
 
 	<ul>
 		<li><a href="#">Sign Up</a></li>
-		<li><a href="#">The Story</a></li>
-		<li><a href="#">More Info</a></li>
+		<li><a href="#the-story">The Story</a></li>
+		<li><a href="#more-info">More Info</a></li>
 	</ul>
 
 </nav>
 
 <!-- More Info -->
-<div class="more-info">
+<div class="more-info" id="more-info">
 	<h2>Join the Club</h2>
 	<p>Every month we discuss <span class="highlight">one audiobook</span> and 2 traditional books.</p>
 
@@ -59,12 +59,24 @@
 </div>
 
 <!-- Text -->
-<div class="story">
+<div class="story" id="the-story">
+	<ul class="list">
+		<li class="red">Fantasy</li>
+		<li>&nbsp;</li>
+		<li class="orange">Historical Fiction</li>
+		<li class="yellow">Mystery/Thriller</li>
+		<li class="gave">Romance</li>
+		<li class="blue">Science Fiction</li>				
+	</ul>
+	
+
+
 	<h3>Why I started my own book club</h3>
-	<p class="quote">  Dreamy far-off look and her nose stuck in a book </p>
+	<br>
+	<p class="quote">  "Dreamy far-off look and her nose stuck in a book" </p>
 	<p>
 		Growing up, my parents did not allow me to watch television during the school week. They thought that the programming, even educational ones, were an unhealthy distraction from everyday life and encouraged me to read instead. Very early on I realized how much more expansive my world could be with books. From my bedroom, I could hop into any number of fantastical and usually magical worlds. Those worlds weren't limited by budgets, graphics, or acting capability and were as expansive as my imagination wanted. I quickly grew to prefer books over TV and even now, I find myself hardpressed to find a television show I'd rather watch over a good book.</p>
-		<p> I created this book club so that I could share my love of reading with the world. I try to read at least one book a month as well as listen. For a long time, I unfairly judged audibooks, considering it almost a form of cheating. After trying them out on some long commutes, I realized that audibooks are just as great and I'd even wager some titles are best suited for an audiobook format. I'm a fan of <a href="#">Audible</a> so check them out. Also, never forget your local library!</p>
+		<p> I created this book club so that I could share my love of reading with the world. I try to read at least one book a month as well as listen. For a long time, I unfairly judged audibooks, considering it almost a form of cheating. After trying them out on some long commutes, I realized that audibooks are just as great and I'd even wager some titles are best suited for an audiobook format. I'm a fan of <a href="#">Audible</a> so check them out. Also, never forget your local library, the best free reading resource you'll ever find.</p>
 </div>
 
 <!-- Separator  -->
@@ -77,7 +89,7 @@
 <!-- Footer -->
 
 <footer>
-	
+	<p>This site was created during a <a href="https://taptapkaboom.com/">Tap Tap Kaboom Class</a> &copy; Liam </p>
 </footer>
 
 <!-- Pop Up -->
@@ -88,10 +100,32 @@
 
 	
 	<div class="content">
-	
-		<button class="close">
-		
-		</button>
+		<h2>Fill In Your Info</h2>
+		<form action="">
+			<div class="fname">
+			<label>First Name</label>
+			<input type="text" placeholder="Book">
+			</div>
+
+			<div class="lname">
+			<label>Last Name</label>
+			<input type="text" placeholder="Worm">
+			</div>
+
+			<div class="email">
+			<label>E-mail</label>
+			<input type="text" placeholder="booksrus@read.com">
+			</div>
+			
+			<div class="genre">
+			<label>Favorite Genre</label>
+			<input type="text" placeholder="Spooky">
+			</div>
+
+			<button class="cta">Sign Me Up</button>
+			
+		</form>
+		<button class="close">Close</button>
 
 	</div>
 	
