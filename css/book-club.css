@@ -1,3 +1,61 @@
-body{
-	background-color: green;
+
+body, html{
+	font-family: 'Open Sans', sans-serif;
 }
+
+.book-banner {
+	background-color: #4FA2B5;
+}
+
+.wrapper{
+
+}
+ h4{
+
+ }
+
+ h1{
+
+ }
+
+ .char1{
+
+ }
+
+.char2{
+
+}
+
+.char3{
+
+}
+
+
+a .remore{
+
+}
+
+/*Book-banner HTML Code
+<div class="book-banner">
+
+	<h4>Liam from <a href="https://skillshare.com"> Skillshare</a>
+	</h4>
+	
+	<h1>Liam's Book Club</h1>
+
+	<h3> See the latest books that I've read  <br>
+	and find one that suits you. </h3>
+
+	<a href="#more-info">Read More</a>
+
+	<div class="char1">
+		
+	</div>
+	<div class="char2">
+		
+	</div>
+	<div class="char3">
+		
+	</div>
+
+	*/
