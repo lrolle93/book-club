@@ -10,3 +10,4 @@ function hidepopup(){
 	popup.classList.remove('show')
 }
 
+// pop up functions
