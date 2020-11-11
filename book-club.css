@@ -12,7 +12,7 @@ h2{
 p{
 	font-weight: bolder;
 	font-size: 25px;
-	margin: 0 30px;
+	margin: 30px 0;
 }
 
 
@@ -78,19 +78,6 @@ h1{
 	transform: rotate(15deg);
 }
 
-
-.book-banner a.rmore{
-	font-size: 25px;
-	font-weight: bold;
-	display: inline-block;
-	color: white;
-	background: #A51C1D;
-	box-shadow: 0 0 0 10px rgba(165, 28, 29,.5);
-	padding: 15px;	
-	border-radius: 5px;
-	text-decoration: none;
-	margin: 20px 10px;
-	}
 
 /*Nav Bar
 
@@ -192,42 +179,28 @@ nav ul li a{
 	text-decoration: none;
 	margin: 20px 10px;
 	border-width: 0;
+	border: none;
+	cursor: pointer;
+	outline: none;
 }
 
-/*
-
-<div class="story" id="the-story">
-	<ul class="list">
-		<li class="red">Fantasy</li>
-		<li>&nbsp;</li>
-		<li class="orange">Historical Fiction</li>
-		<li class="yellow">Mystery/Thriller</li>
-		<li class="gave">Romance</li>
-		<li class="blue">Science Fiction</li>				
-	</ul>
-	
-
-
-	<h3>Why I started my own book club</h3>
-	<br>
-	<p class="quote">  "Dreamy far-off look and her nose stuck in a book" </p>
-	<p>
-		Growing up, my parents did not allow me to watch television during the school week. They thought that the programming, even educational ones, were an unhealthy distraction from everyday life and encouraged me to read instead. Very early on I realized how much more expansive my world could be with books. From my bedroom, I could hop into any number of fantastical and usually magical worlds. Those worlds weren't limited by budgets, graphics, or acting capability and were as expansive as my imagination wanted. I quickly grew to prefer books over TV and even now, I find myself hardpressed to find a television show I'd rather watch over a good book.</p>
-		<p> I created this book club so that I could share my love of reading with the world. I try to read at least one book a month as well as listen. For a long time, I unfairly judged audibooks, considering it almost a form of cheating. After trying them out on some long commutes, I realized that audibooks are just as great and I'd even wager some titles are best suited for an audiobook format. I'm a fan of <a href="#">Audible</a> so check them out. Also, never forget your local library, the best free reading resource you'll ever find.</p>
-</div>
-*/
-
-.story{
-
+.cta:active{
+	opacity: .7;
 }
+
+/*List & Story*/
 
 .list{
 	width: 450px;
-	padding: 5px;
+	padding: 10px;
 	box-sizing: border-box;
 	background-color: silver;
-	border-radius: 20px;
+	border-radius: 10px;
+	float: left;
+	margin: 0 20px 20px 0px;
+	position: relative;
 }
+
 
 
 .list li{
@@ -237,25 +210,137 @@ nav ul li a{
 	color: black;
 	font-weight: bold;
 	display: block;
-	text-align: center;
 	box-sizing: border-box;
-	margin: 5px 0px;
+	margin: 10px 0px;
+	padding: 6px 20px;
 }
 
-.red{
+.list li.red{
 	background-color: red;
 	margin-top: 0px;
 }
 
-.blank{background-color: rgba(0,0,0,.1);}
 
-.orange{background-color: orange;}
+.list li.blank{background-color: rgba(0,0,0,.1);}
 
-.yellow{background-color: yellow;}
 
-.green{background-color: green;}
+.list li.orange{
+	background-color: orange;
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	right: -10px;
+	transform: rotate(5deg);
+	box-shadow: 0 2px 14px rgba(0,0,0,.2);
 
-.blue{
+}
+
+.list li.orange:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 54px;
+	height: 50px;
+	background: url(img/bookmark.jpg) no-repeat 0 0;
+	background-size: 100%;
+	top: 5px;
+	left: 80%;
+}
+
+.list li.yellow{background-color: yellow;}
+
+
+.list li.green{background-color: green;}
+
+
+.list li.blue{
 	background-color: cyan;
 	margin-bottom: 0px;
 }
+
+.story h3{
+	font-size: 35px;
+}
+
+.quote {
+	font-style: italic;
+}
+
+.story p a{
+	color: #E47911;
+}
+
+
+/*Seperators*/
+.sep{
+	width: 500px;
+	height: 10px;
+	background-color: black;
+	margin: 70px auto;
+	border-radius: 5px;
+}
+
+.final{
+	display: block;
+	margin: 0 auto;
+}
+
+footer{
+	text-align: center;
+	font-size: 20px;
+	color: rgba(0,0,0,.5);
+}
+
+footer a{
+	color: rgba(0,0,0,.5);
+}
+/* Footer
+
+<footer>
+	<p>This site was created during a <a href="https://taptapkaboom.com/">
+	Tap Tap Kaboom Class</a> &copy; Liam </p>
+</footer>
+*/
+
+
+
+/*pop up
+<div  class="popup">
+	
+	<div class="blanket"></div>
+
+	
+	<div class="content">
+		<h2>Fill In Your Info</h2>
+		<form action="">
+			<div class="fname">
+			<label>First Name</label>
+			<input type="text" placeholder="Book">
+			</div>
+
+			<div class="lname">
+			<label>Last Name</label>
+			<input type="text" placeholder="Worm">
+			</div>
+
+			<div class="email">
+			<label>E-mail</label>
+			<input type="text" placeholder="booksrus@read.com">
+			</div>
+			
+			<div class="genre">
+			<label>Favorite Genre</label>
+			<input type="text" placeholder="Spooky">
+			</div>
+
+			<button class="cta">Sign Me Up</button>
+			
+		</form>
+		<button class="close">Close</button>
+
+	</div>
+	*/
+
+	.popup{
+		display: none;
+	}
