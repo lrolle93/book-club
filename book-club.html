@@ -20,7 +20,7 @@
 	
 	<h1>Liam's Book Club</h1>
 
-	<h3> See the latest books that I've read  <br>
+	<h3>See the latest books that I've read  <br>
 	and find one that suits you. </h3>
 
 	<a class="rmore" href="#more-info">Read More</a>
@@ -34,7 +34,7 @@
 
 <!-- Navigation Bar -->
 <nav>
-	<a href="#" class="logo">Liam's Club</a>
+	<a href="#" class="logo"></a>
 
 	<ul>
 		<li><a href="#">Sign Up</a></li>
@@ -44,14 +44,18 @@
 
 </nav>
 
+<!-- Added this in to trick the browser when hopping, could've added margin instead -->
+<div id="more-info" ></div>
+
 <!-- More Info -->
-<div class="more-info" id="more-info">
-	<h2>Join the Club</h2>
-	<p>Every month we discuss <span class="highlight">one audiobook</span> and 2 traditional books.</p>
+<div class="more-info" >
+	<div class="wrapper">
+		<h2>Join the Club</h2>
+		<p>Every month we discuss one <span class="highlight">audiobook</span> and 2 traditional books. Members can recommend books for future reading & review.</p>
 
+	<button class="cta">Sign Me Up</button>
+	</div>
 </div>
-<button class="cta">Sign Me Up</button>
-
 <!-- Separating Bar -->
 <div class="sep">
 	

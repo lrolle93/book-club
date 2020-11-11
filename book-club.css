@@ -3,16 +3,33 @@ body, html{
 	font-family: 'Open Sans', sans-serif;
 }
 
+h2{
+	margin: 0 30px;
+	font-size: 35px;
+	font-weight: bold;
+	
+}
+p{
+	font-weight: bolder;
+	font-size: 25px;
+	margin: 0 30px;
+}
+
+
+/*Book Banner*/
+
 .book-banner {
 	background-color: #1CA5A4;
 	height: 100vh;
 	/*VH is the viewport height*/
 	padding: 0 20px;
+	position: relative;
+	overflow: hidden;
 
 }
 
 .wrapper{
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -23,12 +40,12 @@ h1{
 
  .book-banner h4{
  	font-weight: bold;
- 	font-size: 20px;
+ 	font-size: 15px;
  	margin: 15px 0px 20px;
  }
 
 .book-banner h3{
-	font-size: 15px;
+	font-size: 20px;
 
 }
 
@@ -39,25 +56,26 @@ h1{
  .char1{
  	background: url(https://images-na.ssl-images-amazon.com/images/I/919QE25JnTL.jpg) no-repeat 0 0;
  	background-size: 100%;
- 	width: 600px;
- 	height: 775px;
- 	position: absolute; top: 117px; right: 89px;
+ 	width: 300px;
+ 	height: 450px;
+ 	position: absolute; top: 50px; right: 20px;
  }
 
 .char2{
 	background: url(warz.jpg) no-repeat 0 0;
- 	background-size: 100%;
-	width: 250px;
-	height: 300px;
-	position: absolute; top: 100px; right: 10px;
+ 	background-size: 75%;
+	width: 300px;
+	height: 400px;
+	position: absolute; top: 350px; right: 200px;
 }
 
 .char3{
 	background: url(img/world.jpg) no-repeat 0 0;
  	background-size: 100%;
-	width: 375px;
-	height: 350px;
-	position: absolute; top: 250px; right: 10px;
+	width: 200px;
+	height: 275px;
+	position: absolute; bottom: 250px; right: 90px;
+	transform: rotate(15deg);
 }
 
 
@@ -74,32 +92,103 @@ h1{
 	margin: 20px 10px;
 	}
 
-/*Book-banner HTML Code
-div class="book-banner">
+/*Nav Bar
 
-	<div class="wrapper">
-		
-	
-	<h4>Liam from <a href="https://skillshare.com"> Skillshare</a>
-	</h4>
-	
-	<h1>Liam's Book Club</h1>
+<nav>
+	<a href="#" class="logo">Liam's Club</a>
 
-	<h3> See the latest books that I've read  <br>
-	and find one that suits you. </h3>
+	<ul>
+		<li><a href="#">Sign Up</a></li>
+		<li><a href="#the-story">The Story</a></li>
+		<li><a href="#more-info">More Info</a></li>
+	</ul>
 
-	<a class="rmore" href="#more-info">Read More</a>
+</nav>
+
+*/
+
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0px 5px 8px rgba(0,0,0,.2);
+	position: sticky;
+	top: 0;
+}
+
+nav .logo{
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute; top: 0; left: 0;
+	margin-top: 0;
+	margin-left: 30px;
+	background: url(img/logo.png) no-repeat 0 0;
+	background-size: 100%;
+	overflow: hidden;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+
+nav ul li{
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #A51C1D;
+	padding: 35px 10px;
+	line-height: 30px;
+	margin: 
+}
+
+
+/*More Info
+
+<div class="more-info" id="more-info">
+	<h2>Join the Club</h2>
+	<p>Every month we discuss <span class="highlight">one audiobook</span> and 2 traditional books.</p>
+
 </div>
-	<div class="char1">
-		
-	</div>
-	<div class="char2">
-		
-	</div>
-	<div class="char3">
-		
-	</div>
+<button class="cta">Sign Me Up</button>
 
-</div>
+*/
 
-	*/
+.more-info{
+	text-align: center;
+}
+
+.more-info p{
+	margin-top: 20px;
+
+}
+
+.more-info p span{
+	color: #E47911;
+}
+
+
+.cta {
+	font-size: 25px;
+	font-weight: bold;
+	display: inline-block;
+	color: white;
+	background: #A51C1D;
+	box-shadow: 0 0 0 10px rgba(165, 28, 29,.5);
+	padding: 15px;	
+	border-radius: 5px;
+	text-decoration: none;
+	margin: 20px 10px;
+	border-width: 0;
+}
