@@ -174,9 +174,10 @@ nav ul li a{
 
 }
 
-.more-info p span{
+.highlight{
 	color: #E47911;
-}
+	}
+
 
 
 .cta {
@@ -192,3 +193,63 @@ nav ul li a{
 	margin: 20px 10px;
 	border-width: 0;
 }
+
+/*
+
+<div class="story" id="the-story">
+	<ul class="list">
+		<li class="red">Fantasy</li>
+		<li>&nbsp;</li>
+		<li class="orange">Historical Fiction</li>
+		<li class="yellow">Mystery/Thriller</li>
+		<li class="gave">Romance</li>
+		<li class="blue">Science Fiction</li>				
+	</ul>
+	
+
+
+	<h3>Why I started my own book club</h3>
+	<br>
+	<p class="quote">  "Dreamy far-off look and her nose stuck in a book" </p>
+	<p>
+		Growing up, my parents did not allow me to watch television during the school week. They thought that the programming, even educational ones, were an unhealthy distraction from everyday life and encouraged me to read instead. Very early on I realized how much more expansive my world could be with books. From my bedroom, I could hop into any number of fantastical and usually magical worlds. Those worlds weren't limited by budgets, graphics, or acting capability and were as expansive as my imagination wanted. I quickly grew to prefer books over TV and even now, I find myself hardpressed to find a television show I'd rather watch over a good book.</p>
+		<p> I created this book club so that I could share my love of reading with the world. I try to read at least one book a month as well as listen. For a long time, I unfairly judged audibooks, considering it almost a form of cheating. After trying them out on some long commutes, I realized that audibooks are just as great and I'd even wager some titles are best suited for an audiobook format. I'm a fan of <a href="#">Audible</a> so check them out. Also, never forget your local library, the best free reading resource you'll ever find.</p>
+</div>
+*/
+
+.story{
+
+}
+
+.list{
+	width: 450px;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: silver;
+	border-radius: 20px;
+}
+
+
+.list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	box-sizing: border-box;
+	margin: 5px 0px;
+}
+
+.red{background-color: red;}
+
+.blank{background-color: rgba(0,0,0,.1);}
+
+.orange{background-color: orange;}
+
+.yellow{background-color: yellow;}
+
+.green{background-color: green;}
+
+.blue{background-color: cyan;}
